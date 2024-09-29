@@ -12,4 +12,4 @@ def perform_operation():
         case 'divide':
             print("Result: ", num1 / num2)
     
-perform_operation()
+perform_operation(num1,num2, operation)
