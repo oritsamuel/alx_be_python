@@ -10,7 +10,6 @@ class Book:
 class Library:
   def __init__(self):
     self._books = []  
-
   def add_book(self, book):
     self._books.append(book)
 
@@ -35,3 +34,4 @@ class Library:
     for book in self._books:
       if not book._is_checked_out:
         print(book)
+  
