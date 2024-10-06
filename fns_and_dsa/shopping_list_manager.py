@@ -13,12 +13,13 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == '1':
+           
             new_item = input("Enter item name: ")
             shopping_list.append(new_item)
             print(f"{new_item} added to the list!")
 
         elif choice == '2':
-            
+           
             item_to_remove = input("Enter item name to remove: ")
             if item_to_remove in shopping_list:
                 shopping_list.remove(item_to_remove)
@@ -27,6 +28,7 @@ def main():
                 print(f"{item_to_remove} not found in the list.")
 
         elif choice == '3':
+            
             if shopping_list:
                 print("Your shopping list:")
                 for item in shopping_list:
